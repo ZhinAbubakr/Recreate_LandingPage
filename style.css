@@ -15,13 +15,13 @@ nav {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  width: 30%;
+  width: 40%;
 }
 .nav_links a {
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  background-color: #343332dc;
+  color: #ffffffbe;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
 }
@@ -56,7 +56,7 @@ nav {
   .nav_links {
     position: absolute;
     right: 0px;
-    height: 129.5vh;
+    height: 96.4vh;
     top: 12vh;
     background-color: #547fdd;
     display: flex;
@@ -67,9 +67,6 @@ nav {
     transition: transform 0.5s ease-in;
     text-transform: uppercase;
   }
-  /* .nav_links li {
-    opacity: 0;
-  } */
   .burger {
     display: block;
   }
@@ -89,17 +86,20 @@ nav {
   }
 }
 
+@media screen and (max-width: 989px) {
+  .landing_page_sider {
+    display: none;
+  }
+}
+
 .nav_img {
-  background-image: url(buildings.png);
+  background-image: url("main-bg.jpg");
   width: 100%;
-  position: absolute;
-  height: 800px;
-  position: absolute;
-  z-index: -1;
+  position: relative;
+  height: 596px;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: block;
+  float: left;
+  width: 60%;
 }
 .about_title span {
   display: flex;
